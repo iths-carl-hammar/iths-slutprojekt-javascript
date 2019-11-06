@@ -109,7 +109,7 @@ body{
     display: flex;
     grid-area: main;
     width: 100%;
-    background: url("/bilder/iss.jpg") no-repeat center center fixed; 
+    background: url("/bilder/star.jpg") no-repeat center center fixed; 
     background-size: cover;
     
     
