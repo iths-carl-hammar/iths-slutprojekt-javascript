@@ -60,12 +60,13 @@ getISS();
  //setInterval(getISS, 1000);
 // animate css library in java script 
 function features(){
-    const element = document.querySelector('.h1');
+    let element = document.querySelector('.h1');
 element.classList.add('animated', 'rollIn');// features
-
 
 };
 features();
+
+
 
 
 
