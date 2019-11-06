@@ -1,0 +1,484 @@
+#mapid{
+    height: 200px;
+    width: 100%;
+    
+    
+    
+}
+::before,
+::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    font-family: "Titillium Web", "Helvetica Neue", "Helvetica", Arial, sans-serif;
+    
+    
+    
+    
+    
+    margin: 0;
+    
+    
+}
+
+
+
+
+
+
+.wrapper{
+    display: grid;
+    grid-template-columns: 1fr  ;
+    grid-template-columns: 1fr ;
+    grid-template-columns: 1fr;
+    
+    
+    grid-template-columns: repeat(auto-fit, minmax(200px, fr1 fr1 fr1 fr1));
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: "header" "main" "footer" ;
+    overflow: hidden;
+    
+    
+    
+}
+
+
+.header{
+    display: flex;
+    grid-area: header;
+    width: 100%;
+    
+    background: linear-gradient(to bottom, rgba(171, 184, 228, 0.9),transparent);
+    background-color: rgb(16, 18, 31);
+    
+    flex-direction: column;
+    text-align: center;
+    
+    justify-content: center;
+    align-self: center;
+    
+    
+}
+
+.animated  {
+    font-family: 'Roboto', sans-serif;
+    color: rgb(238, 229, 229);
+    padding: 0;
+    box-shadow:  0 0 0 rgba(128, 119, 119, 0.2);
+    margin: 0;
+    font-size: 3rem;
+    font-weight: 100;
+    margin:0;
+    letter-spacing: 1px;
+    animation-duration: 3s;
+    animation-delay: 1s;
+    
+    
+    
+    
+    
+}
+
+.card-text{
+    font-size: 1rem;
+    width: 10rem;
+    
+}
+
+.text{
+    font-family: "Titillium Web", "Helvetica Neue", "Helvetica", Arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    font-weight: 100;
+    font-size: 1rem;
+    color:white;
+    
+    margin: 1rem;
+    
+}
+.main{
+    display: flex;
+    grid-area: main;
+    width: 100%;
+    background: url("/bilder/iss.jpg") no-repeat center center fixed; 
+    background-size: cover;
+    
+    
+    background-position: center;
+    flex-direction: column;
+    
+    justify-content: center;
+    
+    
+    
+    
+    
+}
+.card{
+    display: flex;
+    grid-template: "header" "main" auto / 1fr;
+    box-shadow: 0 0 1em rgba(0,0,0,.5);
+    padding: 1.5em;
+    margin: 3rem;
+    width: 15rem;
+    
+    transition-duration: 1000ms;
+    transition-property: background transform;
+    transition-timing-function: ease;
+    
+    background-color: white;
+    align-content: space-between;
+    flex-direction: row;
+    justify-content: center;
+    align-self: center;
+    
+    grid-template-columns: repeat(auto-fit, minmax(200px,fr1  fr1));
+    
+    
+}
+.card:hover{
+    background: darkgrey;
+    transform: rotate(45deg);
+}
+
+
+
+.card1{
+    display: flex;
+    
+    box-shadow: 0 0 1em rgba(0,0,0,.5);
+    padding: 1.5em;
+    flex-direction: column;
+    flex-wrap: wrap;
+    
+    
+    width: 15rem;
+    
+    margin: 0;
+    
+    justify-content: center;
+    align-self: center;
+    
+    
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    
+}
+
+.link {
+    cursor: pointer;
+    margin: 1rem;
+    text-decoration: none;
+    color:rgb(0, 0, 0);
+    transition: 0.2s;
+    display: inline-block;
+    overflow: hidden;
+    font-size: 1rem;
+    margin: auto;
+    padding: 1px;
+    
+    
+    
+    
+    
+    
+}
+.link:hover{
+    background: #2196f3;
+    color:#255784;
+    box-shadow: 0 0 1rem #2196f3, 0 0 2rem #2196f3, 0 0 1rem, 0 0 3rem #2196f3;
+    
+    
+    
+    
+}
+
+
+
+
+
+
+
+.footer{
+    display: flex;
+    grid-area: footer;
+    flex-direction: column;
+    width: 100%;
+    
+    
+    background: linear-gradient(to bottom, rgba(171, 184, 228, 0.9),transparent);
+    text-align: center;
+    justify-content: center;
+    align-self: center;
+    opacity:0.3 ;
+    
+    
+}
+.footer:hover{
+    opacity: 1.0;
+}
+
+
+.header i {
+    
+    display: flex;
+    
+    
+    cursor: pointer;
+    
+    color: antiquewhite;
+    padding: 0;
+    flex-direction: row-reverse;
+    margin: 1rem;
+    align-self: baseline;
+    font-size: 2rem;
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+}
+
+nav a:hover{
+    background-color: rgb(21, 19, 19);
+}
+
+
+.link1{
+    cursor: pointer;
+    margin: 1rem;
+    text-decoration: none;
+    color:rgb(244, 244, 244);
+    transition: 0.2s;
+    display: inline-block;
+    overflow: hidden;
+    font-size: 1rem;
+    
+}
+.link1:hover{
+    background: #2196f3;
+    color:#255784;
+    box-shadow: 0 0 1rem #2196f3, 0 0 2rem #2196f3, 0 0 1rem, 0 0 3rem #2196f3;
+    
+}
+
+
+
+
+
+
+.test{
+    font-family: 'Fugaz One', cursive;
+    
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+}
+
+
+
+
+.card-text1{
+    
+    margin: 1rem;
+}
+/*page2*/
+.header-page2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-image:  linear-gradient(to bottom right, rgb(147, 181, 224), rgba(72, 85, 230, 0.26));
+    margin-top: -1rem;
+    height: 10rem;
+    
+    
+    
+}
+.header-page2:hover{
+    background-color: navy;
+}
+.h1{
+    font-family: 'Titillium Web', sans-serif;
+    letter-spacing:0.1rem;
+    margin: 0;
+    text-align: center;
+    color:black;
+    
+    
+    
+}
+.link5{
+    color: rgb(4, 8, 41);
+    text-decoration: none;
+}
+.link5:hover {
+    background-color: rgb(24, 13, 87);
+    transition: all 0.3 ease;
+    transform: scale(1.1);
+}
+.section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+.youTube{
+    
+    margin: 0;
+}
+
+.nasa{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.nasa-info1 {
+    height: 315px;
+    width: 25rem;
+    background-image:  linear-gradient(to bottom right, rgb(147, 181, 224), rgba(72, 85, 230, 0.26));
+}
+.nasa-info2{
+    height: 315px;
+    width: 28rem;
+    background-image:  linear-gradient(to bottom right, rgb(147, 181, 224), rgba(72, 85, 230, 0.26));
+    
+}
+.Please{ 
+    text-transform: capitalize;
+    text-align: center;
+    padding: 2rem;
+    margin: 1rem;
+}
+.Tv{
+    padding: 2rem;
+    margin: 1rem;
+}
+
+.ulspace{
+    list-style-type:none;
+    margin: 0;
+    padding: 0.5;
+}
+.fa-user-astronaut{
+    
+    height: 2rem;
+    width: 2rem;
+    font-size: 2rem;
+    padding: 2px;
+    
+}
+.fa-rocket{
+    
+    height: 2rem;
+    width: 2rem;
+    font-size: 2rem;
+    padding: 2px;
+}
+.fa-satellite{
+    
+    height: 2rem;
+    width: 2rem;
+    font-size: 2rem;
+    padding: 2px;
+}
+.spaceinfo{
+    margin: 33px;
+    padding: 9px;
+    
+}
+
+
+
+
+
+
+
+
+
+/* Smartphone*/
+@media only screen and (min-device-width: 320px) and (max-device-width: 480){
+    body {
+        grid-template-areas: "header" "main" "footer" ;
+    }
+    .wrapper{
+        grid-template-areas:
+        'header'
+        'main'
+        'footer';
+    }
+    .main-text{
+        grid-template-columns: 1fr;
+    }
+    .mark1{
+        grid-template-areas:
+        'header'
+        'main'
+        'footer';
+    }
+    .header-page2{
+        display: flex;
+        flex-wrap:wrap;
+        
+        
+        
+        
+        
+        
+        
+        
+    }
+    .section{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .nasa{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+}
+/* desktop*/
+@media only screen and (min-device-width: 1224px) {
+    body {
+        grid-template-areas: "header" "main" "footer" ;
+    }
+    .wrapper{
+        grid-template-areas:  "header" "main" "footer";
+    }
+    .mark1{
+        grid-template-areas: "main" 'header' 'footer';
+    }
+    .main-text{
+        grid-template-columns: 1fr;
+    }
+    
+    
+}
+
+
+
+
+
+
+
+
+
+
+
