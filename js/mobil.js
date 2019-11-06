@@ -8,7 +8,7 @@ let myIcon = L.icon({
     iconSize: [50,32],
     iconAnchor: [-3],
     popupAnchor: [-3,-76],
-});
+}); // Object 
 
 let marker = L.marker([0,0], {icon:myIcon} ).addTo(mymap);
 
@@ -57,7 +57,7 @@ async function getISS(){
     
 }
 getISS();
- //setInterval(getISS, 1000);
+setInterval(getISS, 1000);
 // animate css library in java script 
 function features(){
     let element = document.querySelector('.h1');
@@ -65,6 +65,7 @@ element.classList.add('animated', 'rollIn');// features
 
 };
 features();
+
 
 
 
