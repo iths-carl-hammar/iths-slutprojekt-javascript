@@ -67,12 +67,14 @@ function features(){
 features();
 
 function tryck(){
+    
     let button = document.querySelector(".btn");
     button.addEventListener("click", ()=>{
         let node =   document.createElement("h3");
         node.innerText = "Sorry for bad design";
         let elementToPlaceTheThing = document.querySelector( "article");
         elementToPlaceTheThing.append(node)
+        
         //   let newtext = createContext("")
     })
 };
