@@ -57,15 +57,27 @@ async function getISS(){
     
 }
 getISS();
-setInterval(getISS, 1000);
+//setInterval(getISS, 1000);
 // animate css library in java script 
 function features(){
     let element = document.querySelector('.h1');
-element.classList.add('animated', 'rollIn');// features
-
+    element.classList.add('animated', 'rollIn');// features
+    
 };
 features();
 
+function tryck(){
+    let button = document.querySelector(".btn");
+    button.addEventListener("click", ()=>{
+        let node =   document.createElement("h3");
+        node.innerText = "Sorry for bad design";
+        let elementToPlaceTheThing = document.querySelector( "article");
+        elementToPlaceTheThing.append(node)
+        //   let newtext = createContext("")
+    })
+};
+
+tryck()
 
 
 
