@@ -65,15 +65,37 @@ function features(){
     
 };
 features();
+let astro =  [
+{
+    name:'peter',
+    skills:'laser sword',
+    country: 'usa',
+    food: 'bananas',
+    salaryPerhour: 100,
+    dad: 'darth maul'
+},
+{
+    name:'peter2',
+    skills:'laser sword',
+    country: 'usa',
+    food: 'bananas',
+    salaryPerhour: 100,
+    dad: 'darth vader'
+}
+]
 
+    
 function tryck(){
     
     let button = document.querySelector(".btn");
     button.addEventListener("click", ()=>{
         let node =   document.createElement("h3");
-        node.innerText = "Sorry for bad design";
+        let randomNumber = Math.floor((Math.random() * astro.length));
+        node.innerText = 'My name is ' + astro[randomNumber].name + ' and my dad is ' + astro[randomNumber].dad;
         let elementToPlaceTheThing = document.querySelector( "article");
         elementToPlaceTheThing.append(node)
+        
+        
         
         //   let newtext = createContext("")
     })
@@ -81,7 +103,27 @@ function tryck(){
 
 tryck()
 
+// OOP
 
+    
+class astronaut {
+    constructor(name ,country ,skills){
+        this.name = name;
+        this.country = country;
+        this.skills = skills;    
+        
+    }
+    
+    
+    
+    
+}
+
+let astronautOne = new astronaut('clark', 'usa','drive spaceTank');
+
+
+let astronautTwo = new astronaut()
+let astronauthree = new astronaut()
 
 
 
