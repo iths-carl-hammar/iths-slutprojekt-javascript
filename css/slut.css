@@ -15,9 +15,7 @@
 
 body{
     
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    
     
     font-family: "Titillium Web", "Helvetica Neue", "Helvetica", Arial, sans-serif;
     
@@ -57,8 +55,8 @@ body{
     grid-area: header;
     width: 100%;
     
-    background: linear-gradient(to bottom, rgba(171, 184, 228, 0.9),transparent);
-    background-color: rgb(16, 18, 31);
+    background: linear-gradient(to top, rgba(29, 33, 37, 0.9),transparent);
+    background-color: rgba(52, 61, 70, 0);
     
     flex-direction: column;
     text-align: center;
@@ -73,7 +71,7 @@ body{
     font-family: 'Roboto', sans-serif;
     color: rgb(238, 229, 229);
     padding: 0;
-    box-shadow:  0 0 0 rgba(128, 119, 119, 0.2);
+    box-shadow:  0 0 0 rgba(36, 36, 37, 0.308);
     margin: 0;
     font-size: 3rem;
     font-weight: 100;
@@ -111,6 +109,8 @@ body{
     width: 100%;
     background: url("/bilder/star.jpg") no-repeat center center fixed; 
     background-size: cover;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
     
     
     background-position: center;
@@ -155,7 +155,7 @@ body{
 .card1{
     display: flex;
     
-    box-shadow: 0 0 1em rgba(0,0,0,.5);
+    box-shadow: 0 0 1em rgba(185, 172, 172, 0.5);
     padding: 1.5em;
     flex-direction: column;
     flex-wrap: wrap;
@@ -216,7 +216,7 @@ body{
     width: 100%;
     
     
-    background: linear-gradient(to bottom, rgba(171, 184, 228, 0.9),transparent);
+    background: linear-gradient(to bottom, rgba(47, 48, 49, 0.801),transparent);
     text-align: center;
     justify-content: center;
     align-self: center;
@@ -236,12 +236,14 @@ body{
     
     cursor: pointer;
     
-    color: rgb(3, 2, 0);
-    padding: 0;
+    color: rgb(52, 61, 70);
+    padding: 2rem;
     flex-direction: row-reverse;
-    margin: 1rem;
+    margin: 0rem;
     align-self: baseline;
-    font-size: 2rem;
+    font-size: 3rem;
+
+
     
     
     
@@ -350,9 +352,9 @@ nav a:hover{
     justify-content: space-between;
 }
 .nasa-info1 {
-   
+    
     width: 25rem;
-   background-color: rgb(103, 103, 103);
+    background-color: rgb(103, 103, 103);
 }
 .nasa-info2{
     height: 315px;
@@ -369,13 +371,13 @@ nav a:hover{
 
 
 .ulspace{
-   
+    color: rgb(20, 20, 24);
     flex-direction: row;
     
-   
+    
     
     list-style-type:none;
-   
+    
     
 }
 .fa-user-astronaut{
@@ -411,7 +413,7 @@ nav a:hover{
     justify-content: flex-end;
     align-self: flex-end;
     margin: 1rem;
-    border-radius: 1rem;
+    border-radius:  1rem;
     height: 5rem;
     width: 5rem;
     transition: all .3s ease;
@@ -422,7 +424,20 @@ nav a:hover{
 }
 .btn:hover{
     background-color: darkslategrey;
+    
+    
 }
+.a{
+    color: rgb(20, 20, 24);
+}
+.b{
+    color: rgb(20, 20, 24);
+}
+.c{
+    color: rgb(20, 20, 24);
+}
+
+
 
 
 
