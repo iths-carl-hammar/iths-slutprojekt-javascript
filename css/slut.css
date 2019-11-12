@@ -350,7 +350,7 @@ nav a:hover{
     justify-content: space-between;
 }
 .nasa-info1 {
-    height: 315px;
+   
     width: 25rem;
     background-image:  linear-gradient(to bottom right, rgb(147, 181, 224), rgba(72, 85, 230, 0.26));
 }
@@ -366,10 +366,7 @@ nav a:hover{
     padding: 2rem;
     margin: 1rem;
 }
-.Tv{
-    padding: 2rem;
-    margin: 1rem;
-}
+
 
 .ulspace{
     list-style-type:none;
@@ -411,9 +408,14 @@ nav a:hover{
     margin: 1rem;
     height: 5rem;
     width: 5rem;
+    transition: all .3s ease;
+    cursor: pointer;
     
     
     
+}
+.btn:hover{
+    background-color: darkslategrey;
 }
 
 

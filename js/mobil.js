@@ -14,7 +14,7 @@ let marker = L.marker([0,0], {icon:myIcon} ).addTo(mymap);
 
 function onMap(){
     
-    marker.bindPopup("<b> kalle is fan cool</b>").openPopup();
+    marker.bindPopup("<b> Hello cool Astronat</b>").openPopup();
     
     
     
@@ -65,35 +65,42 @@ function features(){
     
 };
 features();
+
+
+
+// Object in a Array
 let astro =  [
-{
-    name:'peter',
-    skills:'laser sword',
-    country: 'usa',
-    food: 'bananas',
-    salaryPerhour: 100,
-    dad: 'darth maul'
-},
-{
-    name:'peter2',
-    skills:'laser sword',
-    country: 'usa',
-    food: 'bananas',
-    salaryPerhour: 100,
-    dad: 'darth vader'
-}
+    // properties in key: value pairs.
+    {
+        name:'Magnus',
+        skills:'space walk',
+        country: 'usa',
+        food: 'dry food',
+        salaryPerhour: 100,
+        dad: 'darth mau'
+    },
+    {
+        name:'kalle',
+        skills:'space Walk',
+        country: 'usa',
+        food: 'beer',
+        salaryPerhour: 100,
+        dad: 'darth vader'
+    }
 ]
 
-    
+
 function tryck(){
     
     let button = document.querySelector(".btn");
     button.addEventListener("click", ()=>{
         let node =   document.createElement("h3");
         let randomNumber = Math.floor((Math.random() * astro.length));
-        node.innerText = 'My name is ' + astro[randomNumber].name + ' and my dad is ' + astro[randomNumber].dad;
-        let elementToPlaceTheThing = document.querySelector( "article");
-        elementToPlaceTheThing.append(node)
+        node.innerText = 'I am astronat ' + astro[randomNumber].name + ' and my dad is ' + astro[randomNumber].dad + ' my skills is '+ astro[randomNumber].skills + 'i like food most ' + astro[randomNumber].food + ' i am born in ' + astro[randomNumber].country + ' make some money ' + astro[randomNumber].salaryPerhour;
+        let place = document.querySelector( ".nasa-info1");
+        place.append(node)
+        
+        
         
         
         
@@ -103,9 +110,22 @@ function tryck(){
 
 tryck()
 
+function clearTryck(){
+    let place = document.querySelector( ".nasa-info1");
+    place.innerText =  "  reload home page  ";
+    
+    
+};
+
+
+document.querySelector(".btn").addEventListener("dblclick",clearTryck);
+
+
+
+
 // OOP
 
-    
+// ett sätt att välja astronater finns ej nu .   
 class astronaut {
     constructor(name ,country ,skills){
         this.name = name;
@@ -119,11 +139,10 @@ class astronaut {
     
 }
 
-let astronautOne = new astronaut('clark', 'usa','drive spaceTank');
+let astronaut1 = new astronaut('clark', 'usa','drive spaceTank');
+let astronaut2 = new astronaut()
+let astronaut3 = new astronaut()
 
-
-let astronautTwo = new astronaut()
-let astronauthree = new astronaut()
 
 
 
