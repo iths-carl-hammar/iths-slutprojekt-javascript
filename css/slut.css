@@ -304,7 +304,7 @@ nav a:hover{
     justify-content: center;
     align-items: center;
     width: 100%;
-    background-image:  linear-gradient(to bottom right, rgb(147, 181, 224), rgba(72, 85, 230, 0.26));
+    background-image:  linear-gradient(to bottom right, rgb(103, 103, 103), rgba(175, 175, 175, 0.26));
     margin-top: -1rem;
     height: 10rem;
     
@@ -312,7 +312,7 @@ nav a:hover{
     
 }
 .header-page2:hover{
-    background-color: navy;
+    background-color:rgb(75, 75,76);
 }
 .h1{
     font-family: 'Titillium Web', sans-serif;
@@ -325,13 +325,13 @@ nav a:hover{
     
 }
 .link5{
-    color: rgb(4, 8, 41);
+    color: rgb(20, 20, 24);
     text-decoration: none;
 }
 .link5:hover {
-    background-color: rgb(24, 13, 87);
+    background-color: rgba(21, 21, 22, 0.013);
     transition: all 0.3 ease;
-    transform: scale(1.1);
+    transform: scale(2.3);
 }
 .section{
     display: flex;
@@ -352,12 +352,12 @@ nav a:hover{
 .nasa-info1 {
    
     width: 25rem;
-    background-image:  linear-gradient(to bottom right, rgb(147, 181, 224), rgba(72, 85, 230, 0.26));
+   background-color: rgb(103, 103, 103);
 }
 .nasa-info2{
     height: 315px;
     width: 28rem;
-    background-image:  linear-gradient(to bottom right, rgb(147, 181, 224), rgba(72, 85, 230, 0.26));
+    background-color: rgb(103, 103, 103);
     
 }
 .Please{ 
@@ -369,9 +369,14 @@ nav a:hover{
 
 
 .ulspace{
+   
+    flex-direction: row;
+    
+   
+    
     list-style-type:none;
-    margin: 0;
-    padding: 0.5;
+   
+    
 }
 .fa-user-astronaut{
     
@@ -406,6 +411,7 @@ nav a:hover{
     justify-content: flex-end;
     align-self: flex-end;
     margin: 1rem;
+    border-radius: 1rem;
     height: 5rem;
     width: 5rem;
     transition: all .3s ease;
