@@ -128,7 +128,7 @@ document.querySelector(".btn").addEventListener("dblclick",clearTryck);
 //let newApi = 'https://api.nasa.gov/planetary/apod?api_key=5UCdTse7ygWDaXC2M7c5vLa1PYfJtWmBDdqA1XEE';
 async function nasa(){
     let newApi = 'https://api.nasa.gov/planetary/apod?api_key=5UCdTse7ygWDaXC2M7c5vLa1PYfJtWmBDdqA1XEE';
-    let response = await fetch(newApi)
+    let response = await fetch(newApi) // hämntar in nasa data.
     let body = await response.json();
     console.log(body)
     let node =   document.createElement("img");

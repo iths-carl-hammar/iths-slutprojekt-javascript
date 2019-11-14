@@ -34,6 +34,7 @@ body{
 
 
 .wrapper{
+    
     display: grid;
     grid-template-columns: 1fr  ;
     grid-template-columns: 1fr ;
@@ -51,6 +52,7 @@ body{
 
 
 .header{
+    min-height: 26vh;
     display: flex;
     grid-area: header;
     width: 100%;
@@ -70,7 +72,7 @@ body{
 
 .animated  {
     font-family: 'Roboto', sans-serif;
-    color: rgb(238, 229, 229);
+    color: rgb(36, 30, 30);
     padding: 0;
     box-shadow:  0 0 0 rgba(36, 36, 37, 0.308);
     margin: 0;
@@ -105,6 +107,7 @@ body{
     
 }
 .main{
+    
     display: flex;
     grid-area: main;
     width: 100%;
@@ -190,24 +193,23 @@ body{
 
 
 .footer{
+    min-height: 100vh;
     display: flex;
     grid-area: footer;
     flex-direction: column;
     width: 100%;
-    height: 5rem;
+    
     
     
     background: linear-gradient(to bottom, rgba(47, 48, 49, 0.801),transparent);
     text-align: center;
     justify-content: center;
     align-self: center;
-    opacity:0.3 ;
     
-    
-}
-.footer:hover{
     opacity: 1.0;
+    
 }
+
 
 
 .header i {
@@ -223,8 +225,8 @@ body{
     margin: 0rem;
     align-self: baseline;
     font-size: 3rem;
-
-
+    
+    
     
     
     
@@ -354,6 +356,7 @@ nav a:hover{
 .ulspace{
     color: rgb(20, 20, 24);
     flex-direction: row;
+    margin: 0;
     
     
     
@@ -410,6 +413,7 @@ nav a:hover{
 }
 .a{
     color: rgb(20, 20, 24);
+    margin: 0;
 }
 .b{
     color: rgb(20, 20, 24);
