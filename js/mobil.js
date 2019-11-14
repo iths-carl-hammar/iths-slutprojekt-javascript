@@ -57,14 +57,17 @@ async function getISS(){
     
 }
 getISS();
-//setInterval(getISS, 1000);
+setInterval(getISS, 1000);
 // animate css library in java script 
+
 function features(){
     let element = document.querySelector('.h1');
     element.classList.add('animated', 'rollIn');// features
     
 };
 features();
+
+
 
 
 
@@ -77,7 +80,7 @@ let astro =  [
         country: 'usa',
         food: 'dry food',
         salaryPerhour: 100,
-        dad: 'darth mau'
+        dad: 'darth maul',
     },
     {
         name:'kalle',
@@ -85,9 +88,10 @@ let astro =  [
         country: 'usa',
         food: 'beer',
         salaryPerhour: 100,
-        dad: 'darth vader'
+        dad: 'darth vader',
     }
 ]
+
 
 
 function tryck(){
@@ -120,28 +124,42 @@ function clearTryck(){
 
 document.querySelector(".btn").addEventListener("dblclick",clearTryck);
 
+// hämntar in nasa Api 
+//let newApi = 'https://api.nasa.gov/planetary/apod?api_key=5UCdTse7ygWDaXC2M7c5vLa1PYfJtWmBDdqA1XEE';
+async function nasa(){
+    let newApi = 'https://api.nasa.gov/planetary/apod?api_key=5UCdTse7ygWDaXC2M7c5vLa1PYfJtWmBDdqA1XEE';
+    let response = await fetch(newApi)
+    let body = await response.json();
+    console.log(body)
+    let node =   document.createElement("img");
+    let place = document.querySelector('.nasa-info2');
+    node.src = body.url
+    place.append(node)
+};
 
 
+
+nasa();
 
 // OOP
 
 // ett sätt att välja astronater finns ej nu .   
-class astronaut {
-    constructor(name ,country ,skills){
-        this.name = name;
-        this.country = country;
-        this.skills = skills;    
-        
-    }
-    
-    
-    
-    
-}
+//class astronaut {
+//  constructor(name ,country ,skills){
+//    this.name = name;
+//  this.country = country;
+//this.skills = skills;    
 
-let astronaut1 = new astronaut('clark', 'usa','drive spaceTank');
-let astronaut2 = new astronaut()
-let astronaut3 = new astronaut()
+//}
+
+
+
+
+//}
+
+//let astronaut1 = new astronaut('clark', 'usa','drive spaceTank');
+//let astronaut2 = new astronaut()
+//let astronaut3 = new astronaut()
 
 
 
