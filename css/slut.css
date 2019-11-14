@@ -354,7 +354,7 @@ nav a:hover{
 
 
 .ulspace{
-    color: rgb(20, 20, 24);
+    color: rgb(251, 7, 7);
     flex-direction: row;
     margin: 0;
     
@@ -412,14 +412,14 @@ nav a:hover{
     
 }
 .a{
-    color: rgb(20, 20, 24);
+    color: rgb(255, 8, 8);
     margin: 0;
 }
 .b{
-    color: rgb(20, 20, 24);
+    color: rgb(248, 10, 10);
 }
 .c{
-    color: rgb(20, 20, 24);
+    color: rgb(250, 4, 4);
 }
 
 
