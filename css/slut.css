@@ -107,7 +107,7 @@ body{
     
 }
 .main{
-    
+    min-height: 26vh;
     display: flex;
     grid-area: main;
     width: 100%;
@@ -193,7 +193,7 @@ body{
 
 
 .footer{
-    min-height: 100vh;
+    min-height: 50vh;
     display: flex;
     grid-area: footer;
     flex-direction: column;
