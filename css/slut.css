@@ -194,7 +194,7 @@ body{
 
 
 .footer{
-    min-height: 50vh;
+    min-height: 45vh;
     display: flex;
     grid-area: footer;
     flex-direction: column;
@@ -213,19 +213,7 @@ body{
 
 
 
-.header i {
-    
-    display: flex;
-    
-    
-    cursor: pointer;
-    
-    color: rgb(52, 61, 70);
-    padding: 2rem;
-    flex-direction: row-reverse;
-    margin: 0rem;
-    align-self: baseline;
-    font-size: 3rem;
+
     
     
     
@@ -238,8 +226,7 @@ body{
     
     
     
-    
-}
+
 
 nav a:hover{
     background-color: rgb(21, 19, 19);
@@ -358,6 +345,7 @@ nav a:hover{
     color: rgb(22, 20, 20);
     flex-direction: row;
     margin: 0;
+    padding: 0;
     
     
     
@@ -367,24 +355,24 @@ nav a:hover{
 }
 .fa-user-astronaut{
     
-    height: 2rem;
-    width: 2rem;
-    font-size: 2rem;
+    height: 1rem;
+    width: 1rem;
+    font-size: rem;
     padding: 2px;
     
 }
 .fa-rocket{
     
-    height: 2rem;
-    width: 2rem;
-    font-size: 2rem;
+    height: 1rem;
+    width: 1rem;
+    font-size: rem;
     padding: 2px;
 }
 .fa-satellite{
     
-    height: 2rem;
-    width: 2rem;
-    font-size: 2rem;
+    height: 1rem;
+    width: 1rem;
+    font-size: 1rem;
     padding: 2px;
 }
 .spaceinfo{
@@ -413,7 +401,7 @@ nav a:hover{
     
 }
 .a{
-    color: rgb(8, 1, 1);
+    color: rgb(17, 15, 15);
     margin: 0;
 }
 .b{
