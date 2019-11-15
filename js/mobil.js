@@ -68,12 +68,12 @@ function features(){
 };
 features();
 
-function rollOut(){ // features
-    let  hello = document.querySelector('.hello');
-    hello.classList.add('animated', 'rollOut delay-5s' );
+//function rollOut(){ // features
+    //let  hello = document.querySelector('.hello');
+  //  hello.classList.add('animated', 'rollOut delay-5s' );
 
-};
-rollOut();
+//};
+//rollOut();
 
 
 
