@@ -51,6 +51,7 @@ body{
 }
 
 
+
 .header{
     min-height: 26vh;
     display: flex;
@@ -354,7 +355,7 @@ nav a:hover{
 
 
 .ulspace{
-    color: rgb(236, 225, 225);
+    color: rgb(22, 20, 20);
     flex-direction: row;
     margin: 0;
     
@@ -412,14 +413,14 @@ nav a:hover{
     
 }
 .a{
-    color: rgb(226, 214, 214);
+    color: rgb(8, 1, 1);
     margin: 0;
 }
 .b{
-    color: rgb(216, 192, 192);
+    color: rgb(0, 0, 0);
 }
 .c{
-    color: rgb(199, 191, 191);
+    color: rgb(10, 1, 1);
 }
 
 

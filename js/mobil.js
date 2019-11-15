@@ -58,6 +58,7 @@ async function getISS(){
 }
 getISS();
 setInterval(getISS, 1000);
+
 // animate css library in java script 
 
 function features(){
@@ -67,6 +68,12 @@ function features(){
 };
 features();
 
+function rollOut(){ // features
+    let  hello = document.querySelector('.hello');
+    hello.classList.add('animated', 'rollOut delay-5s' );
+
+};
+rollOut();
 
 
 
@@ -140,6 +147,10 @@ async function nasa(){
 
 
 nasa();
+
+    
+
+
 
 // OOP
 
