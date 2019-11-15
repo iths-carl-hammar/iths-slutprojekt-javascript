@@ -2,7 +2,7 @@
 
 
 // Leaflet JavaScript library for maps. 
-let mymap = L.map('mapid').setView([0,0], 1);
+let mymap = L.map('mapid').setView([0,0], 1); // hämntar in div tag i html DOM 
 let myIcon = L.icon({
     iconUrl:'spacefile.png',
     iconSize: [50,32],
@@ -10,11 +10,11 @@ let myIcon = L.icon({
     popupAnchor: [-3,-76],
 }); // Object 
 
-let marker = L.marker([0,0], {icon:myIcon} ).addTo(mymap);
+let marker = L.marker([0,0], {icon:myIcon} ).addTo(mymap); // läger till icon på map
 
 function onMap(){
     
-    marker.bindPopup("<b> Hello cool Astronat</b>").openPopup();
+    marker.bindPopup("<b> Hello cool Astronat</b>").openPopup(); // läger till feauters på map.
     
     
     
@@ -30,20 +30,20 @@ marker.on("mouseover",onMap);
 
 
 let attribution = '&copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>'
-let tileUrl = 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
+let tileUrl = 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'; // hämntar map / data
 
 let tiles = L.tileLayer(tileUrl, {attribution});
-tiles.addTo(mymap);
+tiles.addTo(mymap); 
 
 let firstTime = true;
-let api_url = 'https://api.wheretheiss.at/v1/satellites/25544'
+let api_url = 'https://api.wheretheiss.at/v1/satellites/25544' // hämntar 
 async function getISS(){
     let response = await fetch(api_url) // hämnta data
     let data = await response.json();
-    let { latitude, longitude,daynum, } = data 
+    let { latitude, longitude,daynum, } = data // hämntar key 
     
     // L.marker add  to mymap
-    marker.setLatLng([latitude,longitude,daynum,  ]);
+    marker.setLatLng([latitude,longitude,daynum,  ]); // sätter ut position på map
     
     
     if(firstTime){
@@ -57,7 +57,7 @@ async function getISS(){
     
 }
 getISS();
-setInterval(getISS, 1000);
+setInterval(getISS, 1000); 
 
 // animate css library in java script 
 
